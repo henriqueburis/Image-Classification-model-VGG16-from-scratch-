@@ -28,7 +28,7 @@ class vgg16scratch(nn.Module):
             nn.MaxPool2d((2,2), stride=(2,2)), # pool de janela quadrada de tamanho = 2, passo = 2
         )
     def forward(self, x):
-        logits = self.layer1(x)
-        return logits
+        x = self.layer1(x)
+        return x
 
 ```
