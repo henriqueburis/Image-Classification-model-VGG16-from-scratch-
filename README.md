@@ -19,7 +19,7 @@
 print('==> Building model..')
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
-net = VGG('VGG11',n_classe).to(device)
+net = VGG16(n_classe).to(device)
 
 print(net)
 
