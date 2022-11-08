@@ -21,7 +21,7 @@ Com base no trabalho do AlexNet, o VGG se concentra em outro aspecto crucial das
 print('==> Building model..')
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
-net = VGG16(n_classe).to(device)
+net = vgg16scratch(n_classe).to(device)
 
 print(net)
 
