@@ -31,8 +31,11 @@ class vgg16scratch(nn.Module):
         )
         self.layer4 = nn.Sequential(
             nn.Conv2d(256, 512, kernel_size=3, stride=1, padding=1),nn.ReLU(),
+            nn.BatchNorm2d(512),
             nn.Conv2d(512, 512, kernel_size=3, stride=1, padding=1),nn.ReLU(),
+            nn.BatchNorm2d(512),
             nn.Conv2d(512, 512, kernel_size=3, stride=1, padding=1),nn.ReLU(),
+            nn.BatchNorm2d(512),
             nn.MaxPool2d((2,2), stride=(2,2)), # pool de janela quadrada de tamanho = 2, passo = 2
         )
         self.layer5 = nn.Sequential(
