@@ -65,6 +65,6 @@ class vgg16scratch(nn.Module):
         out = self.fc2(out)
         return out
 
-net = VGG('VGG11')
+net = vgg16scratch(n_classe)
 x = torch.randn(2,3,32,32)
 print(net(Variable(x)).size())
