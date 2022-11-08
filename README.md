@@ -1,6 +1,8 @@
 # Image Classification model VGG16 from scratch | Computer Vision with Pytorch --- in devloper
 
+# VGG
 
+Com base no trabalho do AlexNet, o VGG se concentra em outro aspecto crucial das Redes Neurais Convolucionais (CNNs), a profundidade. Foi desenvolvido por Simonyan e Zisserman. Normalmente consiste em 16 camadas convolucionais, mas também pode ser estendida para 19 camadas (daí as duas versões, VGG-16 e VGG-19). Todas as camadas convolucionais consistem em filtros 3x3. Você pode ler mais sobre a rede no jornal oficial aqui
 
 <p align="center">
 <img src="./fig/ArchitectureVgg16.png" width="500px"></img>
